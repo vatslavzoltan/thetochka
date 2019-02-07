@@ -1,0 +1,232 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media screen and (max-width: 1440px)
+  .header_social
+    left: 40px
+  .header_anchor
+    transform: rotate(-90deg) translate(-150%,-85px)
+  .thumb_link a
+    bottom: 10px
+@media screen and (max-width: 1366px)
+  .form_checkbox
+    display: block
+  .page_form_wrapper
+    .accent_btn
+      display: block
+      margin: 15px auto
+    .text_input
+      width: 45%
+  .thumb_link a
+    font-size: 11px
+    bottom: 0
+    left: 10px
+  .header_info
+    padding-left: 110px
+    width: 50%
+  .header_slider
+    width: 50%
+  .header_info h2
+    font-size: 36px
+  .header_info_subheader
+    margin-bottom: 20px
+    font-size: 24px
+  .header_info_text
+    line-height: 20px
+    font-size: 14px
+  .header_slider .owl-theme .owl-nav button
+    height: 35px
+  .header_slider .owl-theme .owl-nav,.thumb_link
+    width: 80px
+  #sync2
+    margin-left: -80px
+// ≥1200px
++media-breakpoint-down(lg)
+  .page_form_wrapper
+    width: 95%
+    margin: 0 auto
+    box-shadow: 0px 10px 31px -7px rgba(0,0,0,0.44)
+  .page_form_wrapper.flex_row
+    display: block
+    .page_form_text
+      width: 100%
+      max-width: 100%
+    .page_form
+      margin: 15px auto
+      width: 100%
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      flex-wrap: wrap
+      .form_checkbox
+        margin-left: 15px
+    .text_input
+      padding: 0 20px
+      text-indent: 25px
+      width: 30%
+      margin-right: 15px
+    .accent_btn
+      margin: 0
+  .page_section_header,.full_pricelist
+    padding: 0 20px
+  .header_info
+    padding-left: 90px
+    width: 50%
+  .header_slider
+    width: 50%
+  .header_info h2
+    font-size: 30px
+    margin: 5px auto
+  .header_info_subheader
+    margin-bottom: 10px
+    font-size: 18px
+  .header_info_text
+    line-height: 20px
+    font-size: 14px
+  .header_slider .owl-theme .owl-nav button
+    height: 35px
+  .header_slider .owl-theme .owl-nav,.thumb_link
+    width: 80px
+  #sync2
+    margin-left: -80px
+// ≥992px
++media-breakpoint-down(md)
+  .header_info_subheader
+    font-size: 15px
+  .page_form_wrapper
+    padding: 60px 30px
+  .full_pricelist
+    margin: 40px 0 50px
+    display: inline-block
+  .get_call_popup
+    width: 100%
+  body
+    padding: 0 5px
+  .adress_choose,.header_anchor
+    display: none
+  .thumb_link a
+    font-size: 11px
+    bottom: 0
+    left: 10px
+  .price_list li
+    font-weight: normal
+  .prices
+    .price_item
+      width: 30%
+
+// ≥768px
++media-breakpoint-down(sm)
+  .page_form_wrapper.flex_row .text_input
+    margin: 0 15px
+  .header
+    .top_line
+      padding: 15px 45px
+    .open-popup-link,.header_info_text,.header_social
+      display: none
+  .hamburger
+    top: 10px
+    left: 10px
+  .header_content
+    display: block
+  .header_info,.header_slider
+    width: 95%
+    margin: 0 auto
+    padding-left: 0
+  .header_info_advantages.flex_row
+    display: block
+  .header_advantages_item.flex_row
+    width: 75%
+    margin: 0 auto
+    text-align: left
+    justify-content: flex-start
+    margin-bottom: 20px
+  .prices.container
+    .flex_row
+      display: block
+    .price_item
+      width: 95%
+      margin: 0 auto
+  .button
+    padding: 11px 15px
+  .form_checkbox
+    text-align: center
+  .price_item_header
+    font-size: 18px
+  .price_item
+    width: 90%
+// ≥576px
++media-breakpoint-down(xs)
+  .mfp-close-btn-in .mfp-close
+    right: -10px
+  .price_list_popup
+    padding: 20px 10px
+  .clipper
+    width: 230px
+  .price_list_wrapper
+    background-image: none !important
+  .page_form_wrapper.flex_row .page_form
+    flex-direction: column
+  .price_list_wrapper .page_form_wrapper .text_input[name=userphone]
+    float: none
+    margin: 0 auto
+  .page_form_wrapper.flex_row .text_input,.page_form_wrapper .text_input
+    width: 260px
+    margin: 0 auto
+    display: block
+    margin-bottom: 10px
+  .page_form_text
+    text-align: center
+  .page_form_wrapper
+    padding: 20px 25px
+  .page_section_header
+    font-size: 36px
+  .hamburger
+    left: 0
+  .price_header,.price_list
+    padding: 0 20px
+  .prices.container .price_item
+    width: 100%
+  .thumb_link a
+    bottom: 15px
+  .header_slider .owl-theme .owl-nav
+    transform: none
+  .header_info
+    padding: 0 15px
+  body
+    padding: 0
+  .header_info, .header_slider
+    width: 100%
+  .header_social.mobile
+    display: inline-block
+    position: inherit
+    transform: none
+    .header_social_item
+      display: inline-block
+  .header
+    background-position: 100% top
+  .header_info_link
+    margin-bottom: 35px
+  .header_info h2
+    font-size: 35px
+  .page_form_text p
+    text-align: center
+  .page_form_wrapper.flex_row .accent_btn
+      width: 260px
+      margin: 0 auto
+      display: block
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
