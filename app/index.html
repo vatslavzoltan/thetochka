@@ -23,6 +23,7 @@
 </head>
 
 <body class="is_home">
+  <div class="preloader"><div class="pulse"></div></div>
   <!-- Custom HTML -->
   <div class="city_popup white-popup mfp-hide" id='choose_city'>
     <div class="city_popup_content_wrapper">
@@ -132,15 +133,31 @@
   </div>
   <div class="get_call_popup white-popup mfp-hide" id="get_call_popup">
     <div class="pop_content_wrapper">
-      <p>Оставьте  заявку  и мы вам перезвоним!</p>
+      <p>Оставьте заявку и мы вам перезвоним!</p>
       <a href="#" id="get_currier_open">Нужен курьер?</a>
       <form class="popup_call_form" action="#">
         <div class="get_currier">
           <input type="text" name="adress" class="text_input " placeholder="Ваш адрес (для курьера):">
-          <span>(Вызов курьера <span class="accent_color">бесплатно от 1500р.</span> Уточняйте подробности у менеджера.)</span>
+          <span>(Вызов курьера <span class="accent_color">бесплатно от 1500р.</span> Уточняйте подробности у
+            менеджера.)</span>
         </div>
         <input class="text_input" name="userphone" type="tel" placeholder="Ваш телефон:">
         <input class="button white_btn" type="submit" value="Оставить заявку  >>">
+        <label class="form_checkbox">
+          <input class="hide_checkbox" type="checkbox" required>
+          <span class="form_checkbox__icon"></span>
+          Даю согласие на обработку персональных данных
+        </label>
+      </form>
+    </div>
+  </div>
+  <div class="get_call_popup white-popup mfp-hide" id="get_franchiza_popup">
+    <div class="pop_content_wrapper">
+      <p>Откройте свой центр заточки инструментов!</p>
+      <span>Открываем заточку по системе франчайзинга, с нас обучение, помощь в подборе помещения, сайт, реклама, оборудование, наружная реклама, вся полиграфия, все бизнес процессы и <strong>гарантия дохода от 70 тыс.</strong> рублей в месяц или возвращаем деньги. За подробностями нужно оставить телефон</span>
+      <form class="popup_call_form" action="#">
+        <input class="text_input" name="userphone" type="tel" placeholder="Ваш телефон:">
+        <input class="button white_btn" type="submit" value="Хочу Консультацию  >>">
         <label class="form_checkbox">
           <input class="hide_checkbox" type="checkbox" required>
           <span class="form_checkbox__icon"></span>
@@ -165,7 +182,7 @@
       <div class="price_item">
         <h3 class="price_item_header">Заточка грумерского инструмента</h3>
         <ul>
-          <li>Заточка ножевых  блоков: <span class="accent_color">400р.</span></li>
+          <li>Заточка ножевых блоков: <span class="accent_color">400р.</span></li>
           <li>Заточка филировочных ножниц: <span class="accent_color">400р.</span></li>
           <li>Шанкеры: <span class="accent_color">400р.</span></li>
           <li>Ножницы прямые, изогнутые: <span class="accent_color">400р.</span></li>
@@ -173,7 +190,8 @@
       </div>
       <div class="price_item">
         <h3 class="price_item_header">Ремонт</h3>
-        <span class="italic_font">Заточка ножевых блоков. Ремонт машинок для стрижки, тримеров. фенов, Ремонт машинок для аппаратного маникюра.</span>
+        <span class="italic_font">Заточка ножевых блоков. Ремонт машинок для стрижки, тримеров. фенов, Ремонт машинок
+          для аппаратного маникюра.</span>
         <ul>
           <li>Заточка ножевых блоков: <span class="accent_color">400р.</span></li>
           <li>Ремонт машинок для стрижки волос: от <span class="accent_color">200 р.</span></li>
@@ -183,7 +201,7 @@
       <div class="price_item">
         <h3 class="price_item_header">Заточка грумерского инструмента</h3>
         <ul>
-          <li>Заточка ножевых  блоков: <span class="accent_color">400р.</span></li>
+          <li>Заточка ножевых блоков: <span class="accent_color">400р.</span></li>
           <li>Заточка филировочных ножниц: <span class="accent_color">400р.</span></li>
           <li>Шанкеры: <span class="accent_color">400р.</span></li>
           <li>Ножницы прямые, изогнутые: <span class="accent_color">400р.</span></li>
@@ -194,11 +212,14 @@
         <li>Замена переключателя реверса: <span class="accent_color">750р.</span></li>
         <li>Ремонт (замена шнура питания) маникюрного аппарата: <span class="accent_color">750р.</span></li>
         <li>Замена разъема подключения наконечника(ручки) к аппарату: <span class="accent_color">600р. </span></li>
-        <li>Замена сетевого выключателя маникюрного аппарата(Кнопка вкл/выкл): <span class="accent_color">700р.</span></li>
+        <li>Замена сетевого выключателя маникюрного аппарата(Кнопка вкл/выкл): <span class="accent_color">700р.</span>
+        </li>
         <li>Замена трансформатора: <span class="accent_color">2700р./3100р.</span></li>
-        <li>Ремонт фенов. Цена по договорённости: от <span class="accent_color">600 р.</span> <span class="italic_font">(Диагностика бесплатно!)</span></li>
-        <li>Ремонт проводов  машинок для стрижки волос: от <span class="accent_color">400р.-700р.</span></li>
-        <li>Ремонт плоек/утюжков: от <span class="accent_color">600 р.</span> <span class="italic_font">(Диагностика бесплатно!)</span></li>
+        <li>Ремонт фенов. Цена по договорённости: от <span class="accent_color">600 р.</span> <span
+            class="italic_font">(Диагностика бесплатно!)</span></li>
+        <li>Ремонт проводов машинок для стрижки волос: от <span class="accent_color">400р.-700р.</span></li>
+        <li>Ремонт плоек/утюжков: от <span class="accent_color">600 р.</span> <span class="italic_font">(Диагностика
+            бесплатно!)</span></li>
       </div>
 
       <div class="page_form_wrapper">
@@ -235,7 +256,7 @@
         </a>
       </div>
 
-      <a href="#page_menu"  class="hamburger hamburger--emphatic">
+      <a href="#page_menu" class="hamburger hamburger--emphatic">
         <span class="hamburger-box">
           <span class="hamburger-inner"> </span>
         </span>
@@ -256,8 +277,8 @@
         <div class="adress_choose flex_row">
           <i class="icon-location"></i>
           <div>
-            <span>Город: <a href="#choose_city" class="city_val open-popup-link" data-val="Санкт-Петербург">Санкт-Петербург</a><img src="img/down-ico.svg"
-                alt="#"></span>
+            <span>Город: <a href="#choose_city" class="city_val open-popup-link"
+                data-val="Санкт-Петербург">Санкт-Петербург</a><img src="img/down-ico.svg" alt="#"></span>
             <br>
             <span class="adress_val">пр. Просвещения 35, 194295, если адрес длинный</span>
           </div>
@@ -413,7 +434,7 @@
         Смотреть весь прайс-лист
       </a>
     </section>
-    <div class="page_form_wrapper flex_row">
+    <div class="page_form_wrapper flex_row content_page_form">
       <a href="#" class="header_anchor">
         <i class="icon-down"></i>
         <span>ИНФОРМАЦИЯ О НАС</span>
@@ -434,6 +455,206 @@
         </label>
       </form>
     </div>
+
+    <section class="about" style="background-image: url('img/rectangle.svg'), url('img/about_bg.png');">
+      <div class="container">
+        <h2 class="page_section_header">О компании:</h2>
+      </div>
+      <div class="slider_container ">
+        <div class="about_slider owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/about_slider/1.jpg" alt="#">
+          </div>
+          <div class="item">
+            <img src="img/about_slider/1.jpg" alt="#">
+          </div>
+          <div class="item">
+            <img src="img/about_slider/1.jpg" alt="#">
+          </div>
+          <div class="item">
+            <img src="img/about_slider/1.jpg" alt="#">
+          </div>
+          <div class="item">
+            <img src="img/about_slider/1.jpg" alt="#">
+          </div>
+          <div class="item">
+            <img src="img/about_slider/1.jpg" alt="#">
+          </div>
+        </div>
+      </div>
+      <div class="info_container">
+        <div class="about_text">
+          <h3>Доброго времени суток!</h3>
+          <p class="italic_font">Меня зовут Константин. <br> Я основатель студии заточки "Апачи".</p>
+          <p>В Санкт-Петербурге существует не мало студий заточки. Но не всегда легко найти хорошее качество и
+            приемлемые цены. Именно все это вы найдете у нас.</p>
+          <p>Я постарался, что бы ваш инструмент затачивался на качественном оборудовании и обученными специалистами.
+          </p>
+          <p>Выбрав именно нашу студию заточки, вы сможете по новому взглянуть на качество, сэкономить и наконец,
+            работать не отвлекаясь на недостатки инструмента !</p>
+          <p class="bold_font">С уважением Константин Перфильев! </p>
+        </div>
+      </div>
+    </section>
+    <section class="quality" style="background-image: url('img/qulity_bg1.png'), url('img/qulity_bg2.png');">
+      <div class="container">
+        <div class="flex_row how_we_work">
+          <div class="caption">
+            <h4>Как мы работаем:</h4>
+          </div>
+          <div class="cards flex_row">
+            <div class="item flex_row">
+              <span class="number">01</span>
+              <span class="text">Обрабатываем вашу заявку с сайта, устанавливаем сроки</span>
+            </div>
+            <div class="item flex_row">
+              <span class="number">02</span>
+              <span class="text">Отправляем курьера или объясняем как нас найти</span>
+            </div>
+            <div class="item flex_row">
+              <span class="number">03</span>
+              <span class="text">Оповещаем вас о выполненой работе по телефону. </span>
+            </div>
+          </div>
+        </div>
+        <div class="pluses">
+          <h3 class="page_section_header text_right">Гарантия качества заточки!</h3>
+          <div class="pluses_content">
+            <div class="plus_item">
+              <img src="img/clock.svg" alt="#" class="plus_icon">
+              <h6>Быстро</h6>
+              <p>Время на заточку в среднем <strong>15-20 минут</strong>. При вас в нашем офисе.</p>
+            </div>
+            <div class="plus_item">
+              <img src="img/car.svg" alt="#" class="plus_icon">
+              <h6>Удобно</h6>
+              <p><span class="accent_color">Бесплатная услуга курьера!</span> <br>
+                 <span class="italic_font">*при заказе от 1500р.</span></p>
+            </div>
+            <div class="plus_item">
+              <img src="img/like.svg" alt="#" class="plus_icon">
+              <h6>Профессионально</h6>
+              <p>Полный спектр услуг по заточке парикмахерского и маникюрного инструмента.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback">
+          <div class="flex_row">
+            <h2 class="page_section_header">Отзывы о нас:</h2>
+            <div class="social_feedbacks">
+              <a href="#">
+                <i class="icon-vkontakte"></i>
+                <span>Читайте отзывы Вконтакте</span>
+              </a>
+              <a href="#">
+                <i class="icon-instagram"></i>
+                <span>Читайте отзывы в  Instagram</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex_row feedback_items">
+            <div class="feedback_item">
+              <div class="flex_row m_reset">
+                <img src="img/user1.jpg" alt="#" class="user_icon">
+                <div class="feedback_text">
+                  <p class="username">
+                    Иванов Иван Петрович
+                  </p>
+                  <p class="user_feedback">
+                    это текст-"рыба", часто используемый
+                    в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала
+                    XVI века.
+                  </p>
+                  <a class="italic_font" href="#">Профиль в Instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="feedback_item">
+              <div class="flex_row m_reset">
+                <img src="img/user2.jpg" alt="#" class="user_icon">
+                <div class="feedback_text">
+                  <p class="username">
+                    Иванов Иван Петрович
+                  </p>
+                  <p class="user_feedback">
+                    это текст-"рыба", часто используемый
+                    в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала
+                    XVI века.
+                  </p>
+                  <a class="italic_font" href="#">Профиль в Instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="feedback_item">
+              <div class="flex_row m_reset">
+                <img src="img/user3.jpg" alt="#" class="user_icon">
+                <div class="feedback_text">
+                  <p class="username">
+                    Иванов Иван Петрович
+                  </p>
+                  <p class="user_feedback">
+                    это текст-"рыба", часто используемый
+                    в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала
+                    XVI века.
+                  </p>
+                  <a class="italic_font" href="#">Профиль в Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <div class="container contact_desc">
+      <div class="flex_row">
+        <p>Откройте свой центр заточки!</p>
+        <a href="tel:+79216522656">+79216522656</a>
+        <a href="#get_franchiza_popup" class="open_franchiza_popup open-popup-link button">Подробнее</a>
+      </div>
+    </div>
+    <section class="contact flex_row">
+      <div class="half_row dark_bg left">
+        <div class="contact_info">
+          <h2>Контакты:</h2>
+          <div class="adress_item">
+            <i class="icon-phone"></i>
+            <a href="tel:+79216522656">+79216522656</a>
+          </div>
+          <div class="adress_item">
+            <i class="icon-location"></i>
+            <a href="#"><span class="accent_color">Санкт-Петербург</span> <br>пр. Просвещения 35, 194295 а-111132</a>
+          </div>
+          <div class="adress_item">
+            <i class="icon-mail"></i>
+            <a href="mailto:9876130@gmail.com">9876130@gmail.com</a>
+          </div>
+          <div class="adress_item">
+            <i class="icon-clock"></i>
+            <p>График работы: пн-пт. с 11-00 до 19-00.</p>
+          </div>
+          <div class="flex_row m_reset">
+            <a href="#get_call_popup" class="button open-popup-link">Напишите нам <span class="accent_color">>></span></a>
+            <span class="footer_social flex_row">
+              <a href="#" class="header_social_item"><i class="icon-instagram"></i></a>
+              <a href="#" class="header_social_item"><i class="icon-facebook"></i></a>
+              <a href="#" class="header_social_item"><i class="icon-vkontakte"></i></a>
+              <a href="#" class="header_social_item"><i class="icon-twitter"></i></a>
+              <a href="#" class="header_social_item"><i class="icon-odnoklassniki"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="half_row map">
+        <div class="map_frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.9527763815963!2d30.34845061610146!3d60.04901088191649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469634bec1af8bed%3A0x1b20fa7ef220aab9!2z0L_RgC4g0J_RgNC-0YHQstC10YnQtdC90LjRjywgMzUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5NDI5NQ!5e0!3m2!1sru!2sua!4v1549614633050" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <script src="js/scripts.min.js"></script>

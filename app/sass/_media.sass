@@ -5,6 +5,8 @@
 @media screen and (max-width: 1440px)
   .header_social
     left: 40px
+  .page_form_wrapper .header_anchor
+    left: -160px
   .header_anchor
     transform: rotate(-90deg) translate(-150%,-85px)
   .thumb_link a
@@ -14,13 +16,12 @@
     display: block
   .page_form_wrapper
     .accent_btn
-      display: block
       margin: 15px auto
     .text_input
       width: 45%
   .thumb_link a
     font-size: 11px
-    bottom: 0
+    bottom: 15px
     left: 10px
   .header_info
     padding-left: 110px
@@ -92,6 +93,83 @@
     margin-left: -80px
 // ≥992px
 +media-breakpoint-down(md)
+  .contact_desc .open_franchiza_popup
+    float: right
+  .m_reset
+    display: block
+  .feedback_items .user_icon
+    float: left
+  .user_feedback:before
+    content: ''
+    display: block
+    width: 100%
+    clear: both
+  .contact.flex_row .contact_info
+    padding: 65px 0
+    margin-right: 25px
+  .contact_desc
+    padding: 20px 45px
+    .flex_row
+      display: block
+  .plus_item::after
+    width: 0
+    height: 0
+  .contact.flex_row .adress_item
+    margin-bottom: 15px
+  .contact.flex_row .button
+    margin: 25px auto
+  .flex_row.how_we_work
+    display: block
+  .quality .cards
+    width: 100%
+  .quality .caption
+    width: 100%
+    margin-bottom: 15px
+  .quality .cards .item
+    width: 33%
+  .pluses_content
+    width: 75%
+    display: inline-block
+  .plus_item
+    width: 100%
+    max-width: 100%
+    margin-bottom: 15px
+    text-align: left
+    height: 120px
+    padding: 10px
+    padding-left: 30px
+  .quality
+    background-size: 0 0%,400px auto
+    background-position: 100% 0,-50px 35%
+  .page_section_header
+    font-size: 30px
+  .social_feedbacks a:first-child
+    margin-right: 30px
+  .social_feedbacks i
+    font-size: 24px
+    margin-right: 10px
+    left: -30px
+  .plus_item .plus_icon
+    float: left
+    height: 100%
+    margin-right: 15px
+  .plus_item p
+    display: inline-block
+    width: 85%
+  .plus_item h6
+    margin: 5px 0
+    width: 70%
+  .pluses
+    text-align: right
+    .page_section_header
+      text-align: left
+  .about .info_container h3
+    margin-top: 40px
+  .about .info_container .about_text
+    width: 100%
+  .about
+    background-position: 40% 300px,100% 0
+    background-size: 235px auto,420px auto
   .header_info_subheader
     font-size: 15px
   .page_form_wrapper
@@ -101,6 +179,11 @@
     display: inline-block
   .get_call_popup
     width: 100%
+  .about .slider_container
+    width: 60%
+  .about .info_container
+    width: 100%
+    padding-left: 15px
   body
     padding: 0 5px
   .adress_choose,.header_anchor
@@ -117,11 +200,80 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .content_page_form:after
+    display: none
+  .about .slider_container
+    width: 100%
+  .about
+    background-position: 0% 300px,100% 0
+    background-size: 235px auto,0px auto
+  .cards.flex_row
+    display: block
+  .quality .cards .item
+    width: 100%
+    margin-bottom: 30px
+    padding: 0 10px
+  .quality
+    background-size: 0 0,0 0
+    margin-bottom: 0
+  .contact_desc
+    transform: none
+  .contact.flex_row
+    display: block
+  .contact.flex_row .half_row.map
+    height: 500px
+  .pop_content_wrapper
+    padding: 35px 0
+  .popup_call_form .text_input[name=userphone],#get_franchiza_popup .popup_call_form .text_input[name=userphone]
+    width: 95%
+    display: block
+    margin: 30px auto
+  #get_call_popup,#get_franchiza_popup
+    input[type="submit"]
+      width: 100%
+  .contact.flex_row .half_row
+    width: 100%
+  .contact_desc .flex_row
+    display: block
+    text-align: center
+  .contact_desc .open_franchiza_popup
+    float: none
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+  .pluses_content
+    margin: 30px auto
+    display: block
+    text-align: center
+    width: 95%
+  .plus_item .plus_icon
+    float: none
+  .plus_item
+    height: auto
+    box-shadow: none
+    text-align: center
+    padding: 20px 0
+  .plus_item .plus_icon
+    margin: 0
+  .page_section_header
+    margin: 30px 0
+  .feedback_items .feedback_item
+    width: 95%
+    display: block
+    margin: 0 auto
+    margin-bottom: 30px
+  .plus_item h6
+    width: 100%
+  .social_feedbacks
+    padding-left: 45px
+    margin-bottom: 30px
+  .feedback .flex_row
+    display: block
   .page_form_wrapper.flex_row .text_input
     margin: 0 15px
   .header
     .top_line
-      padding: 15px 45px
+      padding: 15px
     .open-popup-link,.header_info_text,.header_social
       display: none
   .hamburger
@@ -135,6 +287,8 @@
     padding-left: 0
   .header_info_advantages.flex_row
     display: block
+  .header_info_advantages img
+    width: 40px
   .header_advantages_item.flex_row
     width: 75%
     margin: 0 auto
@@ -155,8 +309,14 @@
     font-size: 18px
   .price_item
     width: 90%
+  .contact.flex_row .half_row.left
+    justify-content: center
 // ≥576px
 +media-breakpoint-down(xs)
+  .contact.flex_row .contact_info
+    margin-right: 0
+  .contact.flex_row .adress_item i
+    margin-right: 5px
   .mfp-close-btn-in .mfp-close
     right: -10px
   .price_list_popup
@@ -180,7 +340,7 @@
   .page_form_wrapper
     padding: 20px 25px
   .page_section_header
-    font-size: 36px
+    font-size: 32px
   .hamburger
     left: 0
   .price_header,.price_list
@@ -208,7 +368,7 @@
   .header_info_link
     margin-bottom: 35px
   .header_info h2
-    font-size: 35px
+    font-size: 28px
   .page_form_text p
     text-align: center
   .page_form_wrapper.flex_row .accent_btn
