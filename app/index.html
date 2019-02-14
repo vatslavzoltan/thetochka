@@ -171,7 +171,7 @@
     </div>
   </div>
   <div id="price_list" class="price_list_popup white-popup mfp-hide">
-    <img src="img/clipper.png" alt="" class="clipper">
+    <img src="img/clipper.png" alt="#" class="clipper">
     <div class="price_list_wrapper" style="background-image:url('img/component.png')">
       <h2>Прайс лист</h2>
       <div class="price_item">
@@ -267,11 +267,11 @@
       </a>
       <nav id="page_menu">
         <ul>
-          <li class="active"><a href="#">Услуги и цены</a></li>
-          <li class="active"><a href="#">о компании</a></li>
-          <li class="active"><a href="#">гарантии</a></li>
-          <li class="active"><a href="#">отзывы</a></li>
-          <li class="active"><a href="#">контакты</a></li>
+          <li class="active"><a href="#prices">Услуги и цены</a></li>
+          <li class=""><a href="#about">о компании</a></li>
+          <li class=""><a href="#quality">гарантии</a></li>
+          <li class=""><a href="#feedback">отзывы</a></li>
+          <li class=""><a href="#contact">контакты</a></li>
         </ul>
       </nav>
       <div class="top_line flex_row">
@@ -439,7 +439,7 @@
       </a>
     </section>
     <div class="page_form_wrapper flex_row content_page_form">
-      <a href="#" class="header_anchor">
+      <a href="#about" class="header_anchor">
         <i class="icon-down"></i>
         <span>ИНФОРМАЦИЯ О НАС</span>
       </a>
@@ -460,7 +460,7 @@
       </form>
     </div>
 
-    <section class="about" style="background-image: url('img/rectangle.svg'), url('img/about_bg.png');">
+    <section class="about" id="about" style="background-image: url('img/rectangle.svg'), url('img/about_bg.png');">
       <div class="container">
         <h2 class="page_section_header">О компании:</h2>
       </div>
@@ -500,7 +500,8 @@
         </div>
       </div>
     </section>
-    <section class="quality" style="background-image: url('img/qulity_bg1.png'), url('img/qulity_bg2.png');">
+    <section class="quality" id="quality"
+      style="background-image: url('img/qulity_bg1.png'), url('img/qulity_bg2.png');">
       <div class="container">
         <div class="flex_row how_we_work">
           <div class="caption">
@@ -542,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="feedback">
+        <div class="feedback" id="feedback">
           <div class="flex_row">
             <h2 class="page_section_header">Отзывы о нас:</h2>
             <div class="social_feedbacks">
@@ -620,7 +621,7 @@
         <a href="#get_franchiza_popup" class="open_franchiza_popup open-popup-link button">Подробнее</a>
       </div>
     </div>
-    <section class="contact flex_row">
+    <section class="contact flex_row" id="contact">
       <div class="half_row dark_bg left">
         <div class="contact_info">
           <h2>Контакты:</h2>
@@ -654,15 +655,15 @@
         </div>
       </div>
       <div class="half_row map">
-        <div class="map_frame">
+        <!-- <div class="map_frame">
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A38daaab036ab86439ed0d424df2062951ba12e821a0807c799af9595bd9ae06e&amp;source=constructor"
-            width="843" height="614" frameborder="0"></iframe> </div>
+            width="843" height="614" frameborder="0"></iframe> </div> -->
       </div>
     </section>
 
   </div>
-
+  <div class="top" title="Наверх"><img src="img/top_icon.png" alt="#" class="top_icon"></div>
   <script src="js/scripts.min.js"></script>
 </body>
 

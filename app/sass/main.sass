@@ -108,6 +108,8 @@ b, strong
 .top_line
 	padding: 30px 70px
 	padding-left: 110px
+	.accent_btn
+		margin-right: -20px
 .logo_container
 	width: 95px
 .adress_choose
@@ -123,6 +125,31 @@ b, strong
 		margin: 0 10px
 	.adress_val
 		font-size: 12px
+		max-width: 350px
+		overflow: hidden
+		display: inline-block
+		white-space: nowrap
+		cursor: pointer
+		position: relative
+		transition: all .3s ease
+		&:after
+			content: '...'
+			display: inline-block
+			width: 50px
+			top: 0
+			bottom: 0
+			right: 0
+			background-color: rgba(#fff,.9)
+			color: $accent
+			font-weight: bold
+			line-height: 1px
+			font-size: 35px
+			padding-left: 20px
+			position: absolute
+		&.active
+			max-width: 10000px
+			&:after
+				display: none
 .phone_block
 	font-size: 18px
 	font-weight: 600
@@ -223,13 +250,13 @@ b, strong
 			margin-right: 15px
 #sync2
 	margin-left: -135px
-	box-shadow: 0px 3px 35px -6px rgba(0,0,0,0.75)
+	box-shadow: 0 8px 60px -6px rgba(0,0,0,.2)
 	.item
 		cursor: pointer
 		transition: all .3s ease
 	.current
 		transition: all .3s ease
-		transform: scale(1.1)
+		opacity: .9
 .thumb_wrapper
 	position: relative
 .thumb_link
@@ -307,7 +334,7 @@ b, strong
 	padding: 60px 40px
 	position: relative
 	background-color: #F6F6F6
-	box-shadow: 35px 36px 67px -8px rgba(0,0,0,0.45)
+	box-shadow: 35px 36px 67px -8px rgba(0,0,0,.13)
 	.header_anchor
 		position: absolute
 		transform: rotate(-90deg)
@@ -340,13 +367,21 @@ b, strong
 	background-image: url('../img/phone_ico.png')
 .mm-listitem:after
 	display: none
+.hamburger-box
+	width: 21px
+	height: 21px
+	padding: 3px 4px
+	display: inline-block
+	box-sizing: content-box
+	background-color: #fff
+	border: 1px solid #000
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
 	width: 20px
 	height: 2px
 .hamburger-inner:before
-	top: -5px
+	top: -7px
 .hamburger--emphatic .hamburger-inner:after
-	top: 5px
+	top: 7px
 .hamburger
 	position: fixed
 	z-index: 9999
@@ -373,7 +408,7 @@ b, strong
 			background-color: $accent
 			transition: all .3s ease
 			transform: translate(-120%, -50%)
-		&:hover
+		&:hover,&.active
 			color: $accent
 			&::before
 				width: 23px
@@ -386,6 +421,7 @@ b, strong
 	transform: rotate(-90deg) translate(-200%,-85px)
 	display: inline-block
 	transition: all .3s ease
+	letter-spacing: 1px
 	&:hover
 		color: $accent
 	i
@@ -496,7 +532,6 @@ b, strong
 	padding: 40px 30px
 	position: relative
 	margin-top: 50px
-	padding-bottom: 0
 .content_page_form
 	position: relative
 	&:after
@@ -521,6 +556,7 @@ b, strong
 		background-color: transparent
 		padding: 0
 		margin: 50px auto
+		margin-bottom: 0
 		box-shadow: none
 		.text_input[name=userphone]
 				margin: 0
@@ -833,4 +869,36 @@ li
 			text-align: left
 		.form_checkbox__icon
 			display: inline-block
+
+.top
+	position: fixed
+	bottom: 25px
+	background-color: #E0E0E0
+	border-radius: 10em
+	color: #666
+	width: 50px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	cursor: pointer
+	transition: all .25s ease
+	right: -100px
+	z-index: 12
+	opacity: .5
+	&.active
+		right: 30px
+	i
+		line-height: 0
+	&:hover
+		color: #fff
+		background-color: $accent
+		opacity: 1
+.top_icon
+	width: 50%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 568px)
+	.top
+		bottom: 20px
+		&.active
+			right: 20px
 @import "media" // Always at the end
